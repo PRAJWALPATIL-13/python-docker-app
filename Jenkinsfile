@@ -21,7 +21,7 @@ pipeline {
         stage('Test App') {
             steps {
                 // This can be improved for actual tests; here it checks if the app runs
-                sh 'docker run --rm $IMAGE_NAME:latest python app.py'
+                sh 'docker run -d -p 5000:5000 --rm $IMAGE_NAME:latest python app.py'
             }
         }
 
