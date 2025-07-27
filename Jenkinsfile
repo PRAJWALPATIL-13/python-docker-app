@@ -44,7 +44,7 @@ pipeline {
                 //   docker rm python-app || true
                 //   docker run -d --name python-app -p 5000:5000 $IMAGE_NAME:latest
                 // '''
-                sh 'docker run -d -p 5001:5000 -rm --name python-app-dev  $IMAGE_NAME:latest'
+                sh 'docker run -d --rm -p 5001:5000 --name python-app-dev  $IMAGE_NAME:latest'
 
             }
         }
