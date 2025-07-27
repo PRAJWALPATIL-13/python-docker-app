@@ -1,0 +1,2 @@
+# Python Docker App
+This is a simple Python application that demonstrates how to use Docker to containerize a Python application. The application is a basic Flask web server that returns "Hello, World!" when accessed.
