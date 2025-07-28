@@ -8,7 +8,8 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git branch: 'main', url: 'https://github.com/PRAJWALPATIL-13/python-docker-app.git'
+                // git branch: 'main', url: 'https://github.com/PRAJWALPATIL-13/python-docker-app.git'
+                checkout scm
             }
         }
 
